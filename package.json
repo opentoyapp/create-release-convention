@@ -1,5 +1,5 @@
 {
-  "name": "@opentoyapp/release-convention",
+  "name": "@opentoyapp/create-release-convention",
   "version": "1.0.0",
   "author": "Lee Jae Yeol <opentoyapp@gmail.com> (https://github.com/opentoyapp)",
   "bin": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "github",
-    "url": "https://github.com/opentoyapp/release-convention.git"
+    "url": "https://github.com/opentoyapp/create-release-convention.git"
   },
   "keywords": [
     "create",
@@ -17,5 +17,8 @@
     "semantic-release"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/opentoyapp/release-convention#readme"
+  "bugs": {
+    "url": "https://github.com/opentoyapp/create-release-convention/issues"
+  },
+  "homepage": "https://github.com/opentoyapp/create-release-convention#readme"
 }
