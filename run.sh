@@ -140,6 +140,6 @@ jobs:
         run: npm audit signatures
       - name: Release
         env:
-          GITHUB_TOKEN: \$\{\{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: \${{ secrets.GH_TOKEN }}
         run: npx semantic-release
 " > .github/workflows/release.yml
