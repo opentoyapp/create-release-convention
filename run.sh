@@ -27,77 +27,77 @@ fi
 
 # Create .releaserc file
 echo "{
-  "branches": [
-    "main"
+  \"branches\": [
+    \"main\"
   ],
-  "tagFormat": "release-\${version}",
-  "plugins": [
+  \"tagFormat\": \"release-\${version}\",
+  \"plugins\": [
     [
-      "@semantic-release/commit-analyzer",
+      \"@semantic-release/commit-analyzer\",
       {
-        "preset": "conventionalcommits",
-        "releaseRules": [
+        \"preset\": \"conventionalcommits\",
+        \"releaseRules\": [
           {
-            "type": "feat",
-            "release": "minor"
+            \"type\": \"feat\",
+            \"release\": \"minor\"
           },
           {
-            "type": "fix",
-            "release": "patch"
+            \"type\": \"fix\",
+            \"release\": \"patch\"
           },
           {
-            "type": "docs",
-            "release": "patch"
+            \"type\": \"docs\",
+            \"release\": \"patch\"
           },
           {
-            "type": "style",
-            "release": "patch"
+            \"type\": \"style\",
+            \"release\": \"patch\"
           },
           {
-            "type": "refactor",
-            "release": "patch"
+            \"type\": \"refactor\",
+            \"release\": \"patch\"
           },
           {
-            "type": "perf",
-            "release": "patch"
+            \"type\": \"perf\",
+            \"release\": \"patch\"
           },
           {
-            "type": "test",
-            "release": false
+            \"type\": \"test\",
+            \"release\": false
           },
           {
-            "type": "build",
-            "release": false
+            \"type\": \"build\",
+            \"release\": false
           },
           {
-            "type": "ci",
-            "release": false
+            \"type\": \"ci\",
+            \"release\": false
           },
           {
-            "type": "chore",
-            "release": "major"
+            \"type\": \"chore\",
+            \"release\": \"major\"
           },
           {
-            "type": "revert",
-            "release": "patch"
+            \"type\": \"revert\",
+            \"release\": \"patch\"
           }
         ]
       }
     ],
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/npm",
+    \"@semantic-release/release-notes-generator\",
+    \"@semantic-release/changelog\",
+    \"@semantic-release/npm\",
     [
-      "@semantic-release/git",
+      \"@semantic-release/git\",
       {
-        "assets": [
-          "package.json",
-          "CHANGELOG.md"
+        \"assets\": [
+          \"package.json\",
+          \"CHANGELOG.md\"
         ],
-        "message": "ci: \${nextRelease.version}"
+        \"message\": \"ci: \${nextRelease.version}\"
       }
     ],
-    "@semantic-release/github"
+    \"@semantic-release/github\"
   ]
 }
 " > .releaserc

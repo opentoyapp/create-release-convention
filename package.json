@@ -1,6 +1,6 @@
 {
-  "name": "@opentoyapp/create-release-convention",
-  "version": "1.0.0",
+  "name": "create-release-convention",
+  "version": "1.0.1",
   "author": "Lee Jae Yeol <opentoyapp@gmail.com> (https://github.com/opentoyapp)",
   "bin": {
     "create-release-convention": "run.sh"
