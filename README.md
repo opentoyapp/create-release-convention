@@ -11,3 +11,12 @@ pnpm create release-convention
 ```
 
 After running this, the moment you push to the `main` branch, Github Actions will automatically version your project, create release notes, and even generate a `CHANGELOG.md` file.
+
+## Prerequisites
+
+Before using this toolkit, you need to set up a `GH_TOKEN` in your Github repository:
+
+1. Go to your Github account settings
+2. Navigate to Developer settings > Personal access tokens > Tokens (classic)
+3. Generate a new token with `repo` scope
+4. Add the token to your repository's secrets as `GH_TOKEN`
